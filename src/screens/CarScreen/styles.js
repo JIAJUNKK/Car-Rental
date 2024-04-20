@@ -55,10 +55,12 @@ const singleStyles = StyleSheet.create({
   priceButton:{
     backgroundColor: 'black',
     padding: 10, margin: 10,
-    width: 90,
+    width: 100,
     borderRadius: 15,
   },
   priceText:{
+    textAlign: 'center',
+    fontSize: 12, 
     color: 'white',
     fontWeight: 'bold',
   }
@@ -110,11 +112,11 @@ const filterBarStyles = StyleSheet.create({
     backgroundColor: '#F9F5F5',
     padding: 15,
     marginHorizontal: 5,
-    width: 110, 
+    width: 120, 
     borderRadius: 20,
   },
   buttonText: {
-    fontSize: 15,
+    fontSize: 13,
     fontWeight: 'bold',
     textAlign: 'center',
   },
