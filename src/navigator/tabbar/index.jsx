@@ -12,6 +12,7 @@ export const BottomTabNavigator = () => {
   return (
     <Tab.Navigator
       screenOptions={({ route }) => ({
+        headerShown: false, 
         tabBarStyle: {
           backgroundColor: "black",
           height: 60,
