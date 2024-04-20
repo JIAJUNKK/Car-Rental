@@ -25,7 +25,7 @@ const CarScreen = () => {
       <CarFilter onSelectType={filterCars} />
 
       {carModels
-        .filter((car) => !selectedType || car.type === selectedType)
+        .filter((car) => !selectedType || car.type.includes(selectedType))
         .map((car, index) => (
           <Single key={index} car={car} />
         ))}

@@ -114,7 +114,7 @@ const filterBarStyles = StyleSheet.create({
     borderRadius: 20,
   },
   buttonText: {
-    fontSize: 17,
+    fontSize: 15,
     fontWeight: 'bold',
     textAlign: 'center',
   },

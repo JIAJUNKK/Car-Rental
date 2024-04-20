@@ -1,4 +1,3 @@
-// CarFilter.jsx
 import {React, useState} from 'react';
 import { View, Text, FlatList, TouchableOpacity } from 'react-native';
 import { carModels } from '../../constants';
@@ -7,7 +6,7 @@ import { filterBarStyles } from './styles';
 const CarFilter = ({ onSelectType }) => {
   const [selected, setSelected] = useState('All');
 
-  let types = [...new Set(carModels.map((car) => car.type))];
+  let types = [...new Set(carModels.flatMap((car) => car.type))];
   types = ['All', ...types];
 
   const renderItem = ({ item }) => (

@@ -9,6 +9,42 @@ export const carModels = [
         image: require("../assets/TeslaCybertruck.png"),
     },
     {
+        model: "Honda Civic",
+        brand: "Honda",
+        pricePerDay: 99,
+        color: "White",
+        type: "Compact",
+        transmission: "Automatic/Manual",
+        image: require("../assets/HondaCivic.png"),
+    },
+    {
+        model: "Honda Vezel",
+        brand: "Honda",
+        pricePerDay: 89,
+        color: "White",
+        type: ["Compact", "SUV"], 
+        transmission: "Automatic/Manual",
+        image: require("../assets/HondaVezel.png"),
+    },
+    {
+        model: "Honda Fit",
+        brand: "Honda",
+        pricePerDay: 69,
+        color: "White",
+        type: "Hatchback",
+        transmission: "Automatic/Manual",
+        image: require("../assets/HondaFit.png"),
+    },
+    {
+        model: "Toyota Aqua",
+        brand: "Toyota",
+        pricePerDay: 69,
+        color: "White",
+        type: "Hatchback",
+        transmission: "Automatic/Manual",
+        image: require("../assets/ToyotaAqua.png"),
+    },
+    {
         model: "Tesla Model S",
         brand: "Tesla",
         pricePerDay: 159,
@@ -35,7 +71,6 @@ export const carModels = [
         transmission: "Manual",
         image: require("../assets/FordMustang.png"),
     },
-
 ];
 
 export default {carModels};
