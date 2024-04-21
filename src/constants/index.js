@@ -7,15 +7,11 @@ export const carModels = [
         type: "SUV",
         transmission: "Automatic/Manual",
         image: require("../assets/TeslaCybertruck.png"),
-    },
-    {
-        model: "Honda Civic",
-        brand: "Honda",
-        pricePerDay: 99,
-        color: "White",
-        type: "Compact",
-        transmission: "Automatic/Manual",
-        image: require("../assets/HondaCivic.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 5, 
+        engineCC: "null", 
     },
     {
         model: "Honda Vezel",
@@ -25,6 +21,11 @@ export const carModels = [
         type: ["Compact", "SUV"], 
         transmission: "Automatic/Manual",
         image: require("../assets/HondaVezel.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 5, 
+        engineCC: 1498,
     },
     {
         model: "Honda Fit",
@@ -34,6 +35,11 @@ export const carModels = [
         type: "Hatchback",
         transmission: "Automatic/Manual",
         image: require("../assets/HondaFit.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 5, 
+        engineCC: 1496,
     },
     {
         model: "Toyota Aqua",
@@ -43,6 +49,11 @@ export const carModels = [
         type: "Hatchback",
         transmission: "Automatic/Manual",
         image: require("../assets/ToyotaAqua.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 5, 
+        engineCC: 1496,
     },
     {
         model: "Tesla Model S",
@@ -52,6 +63,11 @@ export const carModels = [
         type: "Executive",
         transmission: "Automatic/Manual",
         image: require("../assets/TeslaModelS.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 5, 
+        engineCC: "null"
     },
     {
         model: "Ferrari 458",
@@ -61,6 +77,11 @@ export const carModels = [
         type: "Sports",
         transmission: "Manual",
         image: require("../assets/Ferrari458.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 2, 
+        engineCC: 4497
     },
     {
         model: "Ford Mustang",
@@ -70,6 +91,11 @@ export const carModels = [
         type: "Sports",
         transmission: "Manual",
         image: require("../assets/FordMustang.png"),
+        description: [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        ],
+        seat: 4, 
+        engineCC: 4999
     },
 ];
 
