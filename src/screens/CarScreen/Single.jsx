@@ -1,11 +1,14 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity} from 'react-native';
 import { singleStyles } from './styles';
+import { useNavigation } from '@react-navigation/native'; 
 
 const Single = ({car}) => {
+  const navigation = useNavigation(); 
+
   return (
     <TouchableOpacity 
-        onPress={() => console.log(`Button pressed on ${car.model}`)} 
+        onPress={() => navigation.navigate('CarDetailsScreen', { car })} 
         style={[singleStyles.container, singleStyles.containerShadow]}
     >
         
