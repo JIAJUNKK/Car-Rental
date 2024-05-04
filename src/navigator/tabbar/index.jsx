@@ -1,13 +1,15 @@
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import { createStackNavigator } from '@react-navigation/stack';
+import { createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import { Ionicons } from "@expo/vector-icons";
 import { styles } from "./styles";
 
 import HomeScreen from "../../screens/HomeScreen";
 import SavedScreen from "../../screens/SavedScreen";
 import SettingsScreen from "../../screens/SettingsScreen";
+
 import CarScreen from "../../screens/CarScreen";
 import CarDetailsScreen from "../../screens/CarScreen/CarDetailsScreen";
+import BookCarMainScreen from "../../screens/BookCarScreen";
 
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -16,6 +18,7 @@ function CarStack() {
   return (
     <Stack.Navigator initialRouteName="CarScreen">
       <Stack.Screen name="CarScreen" component={CarScreen} options={{ headerShown: false }}/>
+
       <Stack.Screen name="CarDetailsScreen" 
         component={CarDetailsScreen} 
         options={{
@@ -25,6 +28,16 @@ function CarStack() {
           headerTintColor: 'black',          
         }}
       />
+
+      <Stack.Screen
+          name="BookCar"
+          component={BookCarMainScreen}
+          options={{
+            headerShown: false,
+            ...TransitionPresets.ModalPresentationIOS, 
+          }}
+      />
+
     </Stack.Navigator>
   );
 }

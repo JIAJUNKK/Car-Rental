@@ -1,9 +1,16 @@
 import React from 'react'
 import { ScrollView, View, Text, Image, TouchableOpacity} from 'react-native'
+import { useNavigation } from '@react-navigation/native';
+
 import {styles} from './styles';
 
 const CarDetailsScreen = ({route}) => {
     const { car } = route.params; 
+    const navigation = useNavigation();
+
+    const handleBooking = () =>{
+        navigation.navigate('BookCar', {car});
+    };
 
     return (
         <ScrollView style={{backgroundColor: '#F9F5F5'}}>
@@ -41,7 +48,7 @@ const CarDetailsScreen = ({route}) => {
 
             <TouchableOpacity 
                 style={[styles.button, styles.containerShadow]}
-                onPress={()=> {console.log("Booking...")}}
+                onPress= {handleBooking}
             >
                 <Text style={{color: 'white', fontSize: 20, fontWeight: 'bold'}}>Book Now</Text>
             </TouchableOpacity>
