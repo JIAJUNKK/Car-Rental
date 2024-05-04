@@ -13,4 +13,10 @@ const styles = StyleSheet.create({
 
 });
 
-export {styles};
+const calendarStyles = StyleSheet.create({
+    container:{
+        backgroundColor: '#F9F5F5',
+    },
+});
+
+export {styles, calendarStyles};

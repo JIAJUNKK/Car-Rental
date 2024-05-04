@@ -1,8 +1,9 @@
 import React from 'react';
-import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Text, TouchableOpacity } from 'react-native';
 import { styles } from './styles';
 import { Ionicons } from '@expo/vector-icons';
 
+import BookingCalendar from './BookingCalendar';
 const BookCarMainScreen = ({ route, navigation }) => {
   const { car } = route.params;
 
@@ -14,7 +15,8 @@ const BookCarMainScreen = ({ route, navigation }) => {
         <Ionicons name="chevron-down" size={24} color="black" />
       </TouchableOpacity>
 
-      <Text>Booking Car Screen</Text>
+      <BookingCalendar/>
+
     </View>
   );
 };
